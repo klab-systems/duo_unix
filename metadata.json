@@ -1,0 +1,29 @@
+{
+  "name": "klabsystems-duo_unix",
+  "version": "0.1.0",
+  "author": "klabsystems",
+  "summary": "Configures DUO unix client and dependencies",
+  "license": "MIT",
+  "source": "",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 8.0.0 < 9.0.0"
+    }
+  ],
+  "pdk-version": "3.3.0",
+  "template-url": "pdk-default#3.3.0",
+  "template-ref": "tags/3.3.0-0-g5d17ec1"
+}
