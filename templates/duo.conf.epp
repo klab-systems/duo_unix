@@ -1,0 +1,34 @@
+<%- | String $ikey,
+      String $skey,
+      String $host,
+      String $failmode,
+      String $pushinfo,
+      String $autopush,
+      String $groups
+| -%>
+;
+; This file is managed by Puppet.
+; Any changes made will automatically be overwritten
+;
+
+[duo]
+; Duo integration key
+ikey=<%= $ikey %>
+
+; Duo secret key
+skey=<%= $skey %>
+
+; Duo API host
+host=<%= $host %>
+
+; Failure mode
+failmode=<%= $failmode %>
+
+; Push info
+pushinfo=<%= $pushinfo %>
+
+; Auto push
+autopush=<%= $autopush %>
+
+; Group restriction
+groups=<%= $groups %>
