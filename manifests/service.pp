@@ -1,8 +1,9 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary Managed SSHD service for duo_unix
 #
 # @example
 #   include duo_unix::service
 class duo_unix::service {
+  service { 'sshd':
+    ensure => running,
+  }
 }

@@ -1,9 +1,11 @@
 ---
 duo_unix::duo_unix_version: 'installed'
 duo_unix::pam_ssh_user_auth_version: 'installed'
-
-
-duo_unix::pam_duo_conf_settings:
-  ikey: <ikey value>
-  skey: <skey value>
-  
+duo_unix::pam_config:
+  ikey: 'MYIKEY'
+  skey: 'MYSKEY'
+  host: 'MYHOST'
+  failmode: 'MYFAILMODE'
+  pushinfo: 'MYPUSHINFO'
+  autopush: 'MYAUTOPUSH'
+  groups: 'MYGROUPS'

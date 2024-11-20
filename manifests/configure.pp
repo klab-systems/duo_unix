@@ -1,6 +1,4 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary Configures necessary files for duo_unix
 #
 # @example
 #   include duo_unix::configure
@@ -34,6 +32,6 @@ class duo_unix::configure {
     owner   => 'root',
     group   => 'root',
     mode    => '0600',
-    content => epp('duo_unix/duo.conf.epp', { * => lookup('duo_unix::pam_duo_conf_settings') }),
+    content => epp('duo_unix/duo.conf.epp', lookup('duo_unix::pam_config')),
   }
 }
